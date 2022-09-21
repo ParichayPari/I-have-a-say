@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
+    <title>Comment Section</title>
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="comments">
+        <h3>Leave a Reply</h3>
+        <div id="create_comment">
+          <!-- comment form -->
+          <label for="comment_input" class="input_label">Leave a comment</label>
+          <textarea id="comment_input" class="cmt_input"></textarea>
+          <!-- email -->
+          <div id="comment_user_contact">
+            <div>
+              <label for="email_input" class="input_label">Your Email</label>
+              <input type="email" id="email_input" class="cmt_input" />
+            </div>
+            <div>
+              <!-- name -->
+              <label for="name_input" class="input_label">Your name</label>
+              <input type="text" id="name_input" class="cmt_input" />
+            </div>
+          </div>
+
+          <div id="comment_footer">
+            <div id="comment_reactions">
+              <h4>Reactions</h4>
+              <span class="reaction" data-reaction="like"><img src="./thumbs-up.png" alt="likes"></span>
+              <span class="reaction" data-reaction="dislike"><img src="./thumbs-down.png" alt="likes"></span>
+            </div>
+            <button id="submit">Submit</button>
+          </div>
+
+        </div>
+        <div id="comment_sub">
+          <!-- show existing comment -->
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
