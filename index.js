@@ -1,4 +1,3 @@
-
 document.getElementById("commentinput").addEventListener("click", function(ev) {
   addComment(ev);
 });
