@@ -1,47 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="style.css" media="all" />
-    <title>Comment Section</title>
-  </head>
-  <body>
-    <div id="wrapper">
-      <div id="comments">
-        <h3>Leave a Reply</h3>
-        <div id="create_comment">
-          <!-- comment form -->
-          <label for="comment_input" class="input_label">Leave a comment</label>
-          <textarea id="comment_input" class="cmt_input"></textarea>
-          <!-- email -->
-          <div id="comment_user_contact">
-            <div>
-              <label for="email_input" class="input_label">Your Email</label>
-              <input type="email" id="email_input" class="cmt_input" />
-            </div>
-            <div>
-              <!-- name -->
-              <label for="name_input" class="input_label">Your name</label>
-              <input type="text" id="name_input" class="cmt_input" />
-            </div>
-          </div>
+<html>
+<head>
+    <title>Comments Page</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
-          <div id="comment_footer">
-            <div id="comment_reactions">
-              <h4>Reactions</h4>
-              <span class="reaction" data-reaction="like"><img src="./thumbs-up.png" alt="likes"></span>
-              <span class="reaction" data-reaction="dislike"><img src="./thumbs-down.png" alt="likes"></span>
+<body>
+    <center class="container" id="contain">
+        <div class="comment-section" id="comment-sec">
+            <div class="comment-header">
+                <div class="comment-number">
+                    <p class="comment-data" id="numb">0 Comments</p>
+                </div>
+             
             </div>
-            <button id="submit">Submit</button>
-          </div>
-
+            <div class="comment-bar">
+                <div class="comment-bar-profile">
+                    <i class="fa fa-user"></i>
+                </div>
+                <div class="comment-bar-box">
+                    <div class="comment-bar-type">
+                        <div data-placeholder="Add a comment..." onclick="typein()" oninput="typein()" id="commenttype" contenteditable="true"></div>
+                    </div>
+                    <div class="comment-bar-buttons">
+                        <button onclick="cancel()" id="commentcancel">Cancel</button>
+                        <input type="submit" value="Comment" id="commentinput">
+                    </div>
+                </div>
+            </div>
         </div>
-        <div id="comment_sub">
-          <!-- show existing comment -->
+        <div class="footer ">
         </div>
-      </div>
-    </div>
-  </body>
+    </center>
+</body>
+<script src="index.js "></script>
 </html>
